@@ -33,6 +33,7 @@ function RageUI.PoolMenus:ClothesStore()
     main:IsVisible(function(Items)
         Items:AddButton("Catalogue des vêtements", nil, {RightLabel = "→"}, function(onSelected)
             if (onSelected) then
+                ped = PlayerPedId()
                 ESX.TriggerServerCallback("ERROR_ClothesStores:Server:GetPlayerSkin", function(skin) 
                     beforepaid = CalculAllClothes(skin)
                     myskin = skin

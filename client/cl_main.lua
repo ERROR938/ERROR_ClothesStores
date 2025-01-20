@@ -1,5 +1,5 @@
 ESX = nil
-if (Config.versionESX == "newESX") then
+if (Config.ESXVerison == "newESX") then
     ESX = exports['es_extended']:getSharedObject()
 else
     CreateThread(function()
