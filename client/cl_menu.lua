@@ -115,7 +115,6 @@ function RageUI.PoolMenus:ClothesStore()
 
                     if (onListChange) then
                         local name = ("%s_2"):format(actual_category.name)
-                        print(name, i)
                         if (myskin[name] ~= nil) then
                             TriggerEvent('skinchanger:change', name, Index-1)
                         end
